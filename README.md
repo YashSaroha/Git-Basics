@@ -57,3 +57,24 @@ Basic readme file including all the essential commands of git
 32)	Push changes to the repository		->	git push origin master 
 
 // Now refreshing the repo will give us all the updated files
+
+// TO MAKE CHANGES IN ALREADY EXISTING PROJECTS OF OTHER USERS
+// Go to the required repo and fork it…the repo will be created in our account
+// now git clone url will clone the file and will make another folder in local
+// now we can do the required changes in the file
+
+// from where we have forked the project is called UPSTREAM url
+// origin – personal
+// upstream – from where we have forked
+
+33)	git remote add upstream “url”
+
+// the changed file should be added to a new branch instead of the main branch to create a new pull request
+Git branch yash
+Git checkout yash
+Git add .
+Git commit -m “readme file updated”
+Git push origin yash
+
+// Now the file will be pushed to yash branch and a pull request can be made to merge this file from    YashSaroha:yash(branch)   to   DesiredPerson:main(branch)
+// we can open only one pull request on one branch so whenever we want to create more pull request we need to create more branches
