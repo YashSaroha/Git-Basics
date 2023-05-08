@@ -1,9 +1,9 @@
 # Git-Basics
 Basic readme file including all the essential commands of git
 
-1)	Making a new directory			->	mkdir "yash-file"
+1)	Making a new directory			->	mkdir yashhh
 2)	Know the current directory		->	pwd
-3)	Change the directory			->	cd “directory-name”
+3)	Change the directory			->	cd directory-name
 4)	List all the files in current directory	->	ls
 5)	List all hidden files in directory		->	ls -a
 6)	Clone any existing repository		->	git clone “url”
@@ -26,17 +26,17 @@ Basic readme file including all the essential commands of git
 17)	Get specific number (e.g = 5) of logs        ->	git log -5
 18)	Undo changes upto a particular commit  ->	git reset “desired-commit-hash-id”
 19)	Undo last made commit & remove the change           ->      git reset --hard HEAD^
-20)	Undo last made commit but keep the change           ->      git reset --soft "commit id of the commit present after the main commit"
-21)	Send changes to backstage without committing   ->	git stash      (first add them to stage by git add .  and then do git stash
+20)	Undo last made commit but keep the change             ->      git reset --soft "commit id of the commit present after the main commit"
+21)	Send changes to backstage without committing         ->	  git stash      (first add them to stage by git add .  and then do git stash
 22)	Bringing the backstaged changes back	->	git stash pop
 23)	Clear all the backstaged changes	->	git stash clean
 
 24)	Display all the branches                              ->	git branch
 25)	Creating a new branch                                -> 	git branch NewBranch
 26)	Shift to new branch                                     ->	git checkout NewBranch
-27)	Create and shift to a  new branch             ->      git checkout -b YashBranch
-28)	Deleting a branch                                         ->      git branch -d YashBranch    (first shift to other branch by git checkout master)
-29)	Merge two branches                                   ->      git merge NewBranch
+27)	Create and shift to a  new branch             ->	git checkout -b YashBranch
+28)	Deleting a branch                                         ->	git branch -d YashBranch    (first shift to other branch by git checkout master)
+29)	Merge two branches                                   ->	git merge NewBranch
 
 // Current branch will be displayed in green color
 // To merge 2 branches...let's suppose in NewBranch we have made some changes...it means it is 1 step ahead of master 
@@ -48,3 +48,12 @@ Basic readme file including all the essential commands of git
 // One master branch is present on local pc and another master branch on remote 
 // Now we need to push the data from local to remote
 
+30)	Connect a repo to a directory		->	git remote add origin “url”
+31)	Show all urls connected to a directory     ->	git remote -v
+
+// ORIGIN can be understood as the name of the url
+// Now to update / push the changes of the files into the repo we will push it and we need to tell where the changes needs to be pushed and to which branch
+
+32)	Push changes to the repository		->	git push origin master 
+
+// Now refreshing the repo will give us all the updated files
